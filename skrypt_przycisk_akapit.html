@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Dodawanie Akapitu</title>
+    <style>
+        .ramka {
+            border: 2px solid #333;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Generator Akapitu</h1>
+    <button id="przyciskDodaj">Dodaj Akapit z Sebastianem</button>
+
+    <div id="kontenerAkapitow">
+        </div>
+
+    <script>
+        const przycisk = document.getElementById('przyciskDodaj');
+        const kontener = document.getElementById('kontenerAkapitow');
+        przycisk.addEventListener('click', function() {
+            const nowyAkapit = document.createElement('p');
+            nowyAkapit.textContent = 'Sebastian';
+            nowyAkapit.classList.add('ramka');
+            kontener.appendChild(nowyAkapit);
+        });
+    </script>
+
+</body>
+</html>

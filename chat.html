@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section id="chat">
+            <div class="message jolanta">
+                <img src="Jolka.jpg" alt="Jolanta Nowak">
+                <p>Cześć idziesz jutro do kina?</p>
+            </div>
+            <div class="message krzysztof">
+                <img src="krzysiek.jpg" alt="Krzysztof Łukasiński">
+                </div>
+        </section>
+        <section class ="input area">
+            <form>
+                <label for="messageInput">Wpisz wiadomość</label>
+                <input type="text" id="messageInput">
+                <button type="button" onclick="sendMessage()">Wyślij</button>
+                <br>
+                <button type="button" onclick="genereateRandomReply()">Generuj</button>
+            </form>
+        </section>
+    </main>
+    <script>
+        const replies =["ok","ko","okok"]
+        function generateRandomReply() {
+            let randomIndex = Math.floor(Math.random() * replies.lenght);
+            let reply = replies[randomIndex];
+        }
+        function sendMessage() {
+            let input = document.querySelector("#messageInput").value;
+            let newmessage = document.createElement("div");
+            newmessage.classList.add("message","krzysztof");
+            newmessage.innerHTML = ` <img src="krzysiek.jpg" alt="Krzysztof Łukasiński">`
+            document.querySelector("#chat").appendChild($newmessage);
+            document.querySelector("$messageInput").value = "";
+        }
+    </script>
+</body>
+</html>
