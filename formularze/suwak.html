@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamiczny Suwak Bez Komentarzy</title>
+</head>
+<body>
+
+
+    <label for="glosnosc">Ustaw Głośność (0 - 100):</label>
+    <input type="range" id="glosnosc" min="0" max="100" value="50">
+
+
+    <p>Aktualnie wybrana głośność: <span id="liczbaGlosnosc">50</span></p>
+
+
+    <script>
+        const suwakGlosnosci = document.getElementById('glosnosc');
+        const poleWartosciGlosnosci = document.getElementById('liczbaGlosnosc');
+
+
+        suwakGlosnosci.addEventListener('input', function() {
+            poleWartosciGlosnosci.textContent = suwakGlosnosci.value;
+        });
+    </script>
+
+
+</body>
+</html>

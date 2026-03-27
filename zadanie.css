@@ -1,0 +1,143 @@
+/* Kolor */
+
+/* Ustawienie koloru tekstu za pomocą nazwy */
+.kolor-nazwa {
+  color: blue;
+}
+
+/* Ustawienie koloru za pomocą kodu szesnastkowego */
+.kolor-hex {
+  color: #ff4500; /* Orange Red */
+}
+
+/* Ustawienie koloru za pomocą funkcji RGB */
+.kolor-rgb {
+  color: rgb(0, 128, 0); /* Green */
+}
+
+/* Text-Align 
+
+/* Wyrównanie do lewej */
+.wyrownanie-lewo {
+  text-align: left;
+}
+
+/* Wyrównanie do prawej */
+.wyrownanie-prawo {
+  text-align: right;
+}
+
+/* Wyśrodkowanie */
+.wyrownanie-srodek {
+  text-align: center;
+}
+
+/* Wyjustowanie (rozciągnięcie tekstu między lewym a prawym marginesem) */
+.wyrownanie-justuj {
+  text-align: justify;
+}
+
+/* Vertical-Align
+
+/* Wyrównanie do góry linii (dla elementów inline/inline-block) */
+.vertical-top {
+  vertical-align: top;
+}
+
+/* Wyrównanie do środka linii */
+.vertical-middle {
+  vertical-align: middle;
+}
+
+/* Wyrównanie w dół (np. dla indeksów dolnych i górnych) */
+.indeks-dolny {
+  vertical-align: sub;
+}
+
+/* Wyrównanie w górę */
+.indeks-gorny {
+  vertical-align: super;
+}
+
+/* Przykładowo w HTML: <span>Wzór H<span class="indeks-dolny">2</span>O</span> */
+
+/* Text decoration */
+
+/* Podkreślenie */
+.dekoracja-podkreslenie {
+  text-decoration: underline;
+}
+
+/* Przekreślenie */
+.dekoracja-przekreslenie {
+  text-decoration: line-through;
+}
+
+/* Linia nad tekstem */
+.dekoracja-nadlinia {
+  text-decoration: overline;
+}
+
+/* Dodanie stylu do podkreślenia */
+.dekoracja-styl {
+  text-decoration: underline wavy blue; /* Podkreślenie, faliste, niebieskie */
+}
+
+/* Text-Transform */
+
+/* Wszystkie litery wielkie (CAPITAL LETTERS) */
+.transform-wielkie {
+  text-transform: uppercase;
+}
+
+/* Wszystkie litery małe (small letters) */
+.transform-male {
+  text-transform: lowercase;
+}
+
+/* Wielka litera na początku każdego słowa (Capitalize Each Word) */
+.transform-kapitalizuj {
+  text-transform: capitalize;
+}
+
+/* Odstępy */
+
+/* Zwiększenie odstępu między literami */
+.odstep-litery {
+  letter-spacing: 3px;
+}
+
+/* Zmniejszenie odstępu między słowami */
+.odstep-slowa {
+  word-spacing: -2px;
+}
+
+/* Zmiana wysokości linii (odstępu między wierszami) */
+.odstep-linie {
+  line-height: 1.5; /* 1.5 razy domyślny rozmiar czcionki */
+}
+
+/* Wcięcie pierwszego wiersza (text-indent) */
+.odstep-wciecie {
+  text-indent: 50px;
+}
+
+/* Cienie */
+
+/* Prosty czarny cień */
+.cien-prosty {
+  text-shadow: 2px 2px 4px #000000;
+  color: white; /* Dla kontrastu */
+}
+
+/* Efekt neona (brak przesunięcia, małe rozmycie, jasny kolor) */
+.cien-neon {
+  text-shadow: 0 0 10px #ff00ff;
+  color: #ffffff;
+}
+
+/* Wiele cieni (oddzielone przecinkami) */
+.cien-wielokrotny {
+  text-shadow: 2px 2px red, 4px 4px blue;
+  color: yellow;
+}

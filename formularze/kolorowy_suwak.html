@@ -1,0 +1,26 @@
+<html>
+<head>
+    <style>
+        #c { width: 150px;
+            height: 150px;
+            border: 1px solid #000;
+            background-color: hsl(0, 100%, 50%); };
+        input[type="range"] { width: 150px; };
+    </style>
+</head>
+<body>
+
+    <div id="c"></div>
+    <input type="range" id="s" min="0" max="360" value="0">
+
+    <script>
+        const s = document.getElementById('s');
+        const c = document.getElementById('c');
+
+        s.addEventListener('input', () => {
+            c.style.backgroundColor = `hsl(${s.value}, 100%, 50%)`;
+        });
+    </script>
+
+</body>
+</html>
